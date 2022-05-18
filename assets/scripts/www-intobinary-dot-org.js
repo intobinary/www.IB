@@ -1,7 +1,7 @@
 /*===
-Into Binary (https://intobinary.org)
+Into Binary (https://madewithlove.intobinary.org)
 &copy Coryright 2022 Into Binary. All rights reserved.
-Written for -- www.intobinary.org
+Written for -- www.madewithlove.intobinary.org
 ===*/
 
 /*=== LIBRARIES ===*/
@@ -19,89 +19,41 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
 var intobinary = $.noConflict();
 intobinary(document).ready(function() {
 	/*** GLOBAL VARIABLES & OBJECTS ***/
-	var questionTag = document.querySelector(".js-quizQuestion"),
-		questionIndexTag = document.querySelector(".js-quizQuestionIndex");
-	
-	var quiz = [], currentQuestion = [],
-		qNoIndex = 0, qNoTotal = 100;
-	
-	var timerTotalSecPerQuestion = 60,
-		timerInterval = "",
-		timerPaused = false;
+	var timerInterval = "";
 	/*** END GLOBAL VARIABLES & OBJECTS ***/
 	
 	/*** SETUP ***/
-	if("speechSynthesis" in window) {} else {
-		intobinary(".js-button_sound").addClass("is-hidden");
-	}
+//	animateCards();
 	/*** END SETUP ***/
 	
 	/*** ACTIONS ***/
-		/*
-		document.querySelector(".js-button_share").addEventListener("click", function() {
-			this.classList.add("is-active");
-			alert("Hey");
-			console.log("Test");
-		//	window.alert("Hey");
-		});
-		*/
-		
-		intobinary(".js-button.u-button").click(function(){
-			var theTag = intobinary(this);
-			
-			theTag.toggleClass("is-active");
-		});
-		
-		intobinary(".js-button_time").click(function() {
-			resetQuestion();
-		});
-		
-		intobinary(".js-button_start").click(function() {
-			startTimer();
-			playQuiz(theInterviewQuestions);
-		});
-		
-		intobinary(".js-button_back").click(function() {			
-			resetApp();
-		});
-		
-		intobinary(".js-button_next").click(function() {
-			resetQuestion();
-			startTimer();
-			nextQuestion();
-		});
-		
-		intobinary(".js-button_pause").click(function() {
-			if(timerPaused == true) { timerPaused = false; }
-			else { timerPaused = true; }
-		});
 	/*** END ACTIONS ***/
 	
 	/*** FUNCTIONS ***/	
-	function startSpeech(questionToRead) {
-		var theSoungButtonTag = document.querySelector(".js-button_sound");
-		if(theSoungButtonTag.classList.contains("is-active")) {
-			var speechToRead = new SpeechSynthesisUtterance();
-			var speechVoices = window.speechSynthesis.getVoices();
-			speechToRead.lang = "en-US";
-//			speechToRead.lang = "ru_RU";
-			speechToRead.voice = speechVoices[10];
-//			speechToRead.pitch = 10;
-//			speechToRead.rate = 10;
-			speechToRead.text = questionToRead;
-
-			window.speechSynthesis.cancel();
-			window.speechSynthesis.speak(speechToRead);
-
-			document.querySelector(".js-button_pause").addEventListener("click", function() {
-				if(timerPaused == true) { window.speechSynthesis.pause(speechToRead); }
-				else { window.speechSynthesis.resume(speechToRead); }
-			});
+	function animateCards() {
+		var cardItem1 = document.querySelector(".cards-list-item:nth-child(1)"),
+			cardItem2 = document.querySelector(".cards-list-item:nth-child(2)"),
+			cardItem3 = document.querySelector(".cards-list-item:nth-child(3)"),
+			cardItem4 = document.querySelector(".cards-list-item:nth-child(4)");
+		
+		timerInterval = setInterval(function() {
+			switchCardPosition(cardItem1, cardItem1.getAttribute("data-position"));
+			switchCardPosition(cardItem2, cardItem2.getAttribute("data-position"));
+			switchCardPosition(cardItem3, cardItem3.getAttribute("data-position"));
+			switchCardPosition(cardItem4, cardItem4.getAttribute("data-position"));
+		}, 1000);
+	}
+	function switchCardPosition(cardItem, dataPosition) {
+		var theTag = cardItem,
+			theOldPosition = parseInt(dataPosition),
+			theNewPosition = 0;
 			
-			document.querySelector(".js-button_back").addEventListener("click", function() {
-				window.speechSynthesis.cancel();
-			});
-		}
+		if(theOldPosition == 1 ) { theNewPosition = 2; }
+		if(theOldPosition == 2 ) { theNewPosition = 4; }
+		if(theOldPosition == 3 ) { theNewPosition = 1; }
+		if(theOldPosition == 4 ) { theNewPosition = 3; }
+			
+		theTag.setAttribute("data-position", theNewPosition);
 	}
 	
 	function startTimer() {
@@ -130,73 +82,6 @@ intobinary(document).ready(function() {
 		}
 	}
 
-	function resetApp(varCMD) {
-		if(varCMD == "withChkbxQuiz") { document.querySelector("#chkbx-quiz").checked = false; }
-		qNoIndex = 0;
-		resetQuestion();
-	}
-	function resetQuestion() {
-		timerPaused = false;
-		
-		clearInterval(timerInterval);
-		intobinary(".quiz .js-button").removeClass("is-active");
-		
-		var theTimeButtonTag = intobinary(".js-button_time"),
-			thePauseButtonTag = intobinary(".js-button_pause"),
-			theTimerTag = document.querySelector(".js-timerTag"),
-			theQTimerTag = document.querySelector(".js-qTimerTag");
-			
-		thePauseButtonTag.removeClass("is-hidden");
-		if(theTimeButtonTag.hasClass("is-active")) {
-			theTimerTag.textContent = "01:00";
-			theQTimerTag.textContent = "01:00";
-		} else {
-			theTimerTag.textContent = "--:--";
-			theQTimerTag.textContent = "--:--";
-			
-			thePauseButtonTag.addClass("is-hidden");
-		}
-	}
-	
-
-	function playQuiz(questionSet) {
-		quiz = getQuestions(questionSet);
-		
-		if (quiz.length === 0) {
-			alert("[ERROR:] No questions available.");
-			return;
-		} else {
-			nextQuestion();
-			qNoTotal = quiz.length + 1;
-		}
-	}
-
-	function getQuestions(arr) {
-		var ranQuest = [];
-
-		for (var i=0; i < arr.length; i++) {
-			ranQuest.push(arr[i]);
-		}
-		
-		return ranQuest;
-	}
-
-	function nextQuestion() {
-		if(qNoIndex > 0 && qNoIndex < qNoTotal) { preparePage(); }
-		
-		if (qNoIndex < qNoTotal) {
-			qNoIndex += 1;
-//			currentQuestion = quiz.pop();
-			currentQuestion = quiz[Math.floor(Math.random() * quiz.length)];
-			
-			questionIndexTag.innerHTML = "Question " + qNoIndex;
-			
-			questionTag.textContent = currentQuestion.title;
-			startSpeech(currentQuestion.title);
-		} else {
-			resetApp("withChkbxQuiz");
-		}
-	}
 	/*** END FUNCTIONS ***/
 });
 
