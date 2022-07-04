@@ -27,11 +27,11 @@ Written for -- www.madewithlove.intobinary.org
 	/*** END COLORS ***/
 		
 	/*** FONTS ***/
-		@font-face{font-family:"OCR A";src:url("https://madewithlove.intobinary.org/assets/fonts/OCR-A-extended/ocraext.ttf");/*src:url("https://madewithlove.intobinary.org/assets/fonts/ALPHABETH.eot") format("embedded-opentype"),url("https://madewithlove.intobinary.org/assets/fonts/ALPHABETH.woff2") format("woff2"),url("https://madewithlove.intobinary.org/assets/fonts/ALPHABETH.woff") format("woff"),url("https://madewithlove.intobinary.org/assets/fonts/ALPHABETH.ttf") format("trutype"),url("https://madewithlove.intobinary.org/assets/fonts/ALPHABETH.svg") format("svg");*/}body{font-family:"OCR A", serif;}{font-family:"Arial Black", sans-serif;}.brochure-header-title,.header-title,.quote-content,.brochure-content-details-title{font-size:2.5em;}.ads-facebook-title,.u-form{text-align:center;}.u-form-label,.u-form-input{text-align:left !important;}.ads-facebook-title,.brochure-header-title,.card-title,.header-title,.quote-content,.u-cta-button,.u-subtitle,.brochure-content-details-title{font-weight:bold;}.ads-facebook-title,.card-title,.u-cta-button,.u-subtitle{text-transform:uppercase;}.ads-facebook-title,.card-title,.u-subtitle{font-variant:small-caps;}.footer p a,.header p a,.madam a,.u-cta-button:hover,.u-cta-button:active,.u-cta-button:focus{text-decoration:underline;}.nav-cta-link{text-indent:-9999px;}
+		@font-face{font-family:"OCR A";src:url("../../assets/fonts/OCR-A-extended/ocraext.ttf");/*src:url("../../assets/fonts/ALPHABETH.eot") format("embedded-opentype"),url("../../assets/fonts/ALPHABETH.woff2") format("woff2"),url("../../assets/fonts/ALPHABETH.woff") format("woff"),url("../../assets/fonts/ALPHABETH.ttf") format("trutype"),url("../../assets/fonts/ALPHABETH.svg") format("svg");*/}body{font-family:"OCR A", serif;}{font-family:"Arial Black", sans-serif;}.brochure-header-title,.header-title,.quote-content,.brochure-content-details-title{font-size:2.5em;}.ads-facebook-title,.u-form{text-align:center;}.u-form-label,.u-form-input{text-align:left !important;}.ads-facebook-title,.brochure-header-title,.card-title,.header-title,.quote-content,.u-cta-button,.u-subtitle,.brochure-content-details-title{font-weight:bold;}.ads-facebook-title,.card-title,.u-cta-button,.u-subtitle{text-transform:uppercase;}.ads-facebook-title,.card-title,.u-subtitle{font-variant:small-caps;}.footer p a,.header p a,.madam a,.u-cta-button:hover,.u-cta-button:active,.u-cta-button:focus{text-decoration:underline;}.nav-cta-link{text-indent:-9999px;}
 	/*** END FONTS ***/
 		
 	/*** MEDIA ***/
-		.cards-list-item:nth-child(2) .card-img{background-image:url("https://madewithlove.intobinary.org/assets/images/icon_nasa_green.png");}.cards-list-item:nth-child(3) .card-img{background-image:url("https://madewithlove.intobinary.org/assets/images/icon_radio_green.png");}.cards-list-item:nth-child(2) .card-img,.cards-list-item:nth-child(3) .card-img{background-size:100% auto;}.cards-list-item:nth-child(1) .card-img{background-image:url("https://madewithlove.intobinary.org/assets/images/logo_alphazet_black.png");}.cards-list-item:nth-child(4) .card-img{background-image:url("https://madewithlove.intobinary.org/assets/images/logo_shop_white.png");}.cards-list-item:nth-child(1) .card-img,.cards-list-item:nth-child(4) .card-img{background-size:100% auto;}.card-img{background-repeat:no-repeat;background-position:center;}.mockups-list-item:nth-child(1) .mockup{background-image:url("https://madewithlove.intobinary.org/assets/images/screen_practice-interview-questions-dot-intobinary-dot-org.gif");}.mockups-list-item:nth-child(2) .mockup{background-image:url("https://madewithlove.intobinary.org/assets/images/screen_radio-dot-intobinary-dot-org.gif");}.mockups-list-item:nth-child(3) .mockup{background-image:url("https://madewithlove.intobinary.org/assets/images/screen_ready.png");}.mockup{background-size:87% auto;}.mockup{background-repeat:no-repeat;background-position:center 45%;//background-position:center .85em;//background-position:center 1.1em;}.mockups-background.style-old{background-image:url("https://madewithlove.intobinary.org/assets/images/logo-words_white_www-dot-intobinary-dot-org.png");}.mockups-background.style-old{background-size:25% auto;}.mockups-background.style-new,.madam-matrix{background-image:url("https://madewithlove.intobinary.org/assets/images/matrix_www-dot-intobinary-dot-org.png");}.madam-matrix{background-position:top right;}.mockups-background.style-new,.madam-matrix{background-size:25em auto !important;}.ads-list-item:nth-child(1) .ad{background-image:url("https://madewithlove.intobinary.org/assets/images/social-media-post-1.png");}.ads-list-item:nth-child(2) .ad{background-image:url("https://madewithlove.intobinary.org/assets/images/social-media-post-2.png");}.ads-list-item:nth-child(3) .ad{background-image:url("https://madewithlove.intobinary.org/assets/images/social-media-post-3.png");}.ad{background-position:center;}.ad{background-size:cover;}.ads-facebook-placeholder{background-image:url("https://madewithlove.intobinary.org/assets/images/icon_facebook_white.png");}.ads-facebook-placeholder{background-repeat:no-repeat;background-position:center 75%;}.ads-facebook-placeholder{background-size:25%;}
+		.cards-list-item:nth-child(2) .card-img{background-image:url("../../assets/images/icon_nasa_green.png");}.cards-list-item:nth-child(3) .card-img{background-image:url("../../assets/images/icon_radio_green.png");}.cards-list-item:nth-child(2) .card-img,.cards-list-item:nth-child(3) .card-img{background-size:100% auto;}.cards-list-item:nth-child(1) .card-img{background-image:url("../../assets/images/logo_alphazet_black.png");}.cards-list-item:nth-child(4) .card-img{background-image:url("../../assets/images/logo_shop_white.png");}.cards-list-item:nth-child(1) .card-img,.cards-list-item:nth-child(4) .card-img{background-size:100% auto;}.card-img{background-repeat:no-repeat;background-position:center;}.mockups-list-item:nth-child(1) .mockup{background-image:url("../../assets/images/screen_practice-interview-questions-dot-intobinary-dot-org.gif");}.mockups-list-item:nth-child(2) .mockup{background-image:url("../../assets/images/screen_radio-dot-intobinary-dot-org.gif");}.mockups-list-item:nth-child(3) .mockup{background-image:url("../../assets/images/screen_ready.png");}.mockup{background-size:87% auto;}.mockup{background-repeat:no-repeat;background-position:center 45%;//background-position:center .85em;//background-position:center 1.1em;}.mockups-background.style-old{background-image:url("../../assets/images/logo-words_white_www-dot-intobinary-dot-org.png");}.mockups-background.style-old{background-size:25% auto;}.mockups-background.style-new,.madam-matrix{background-image:url("../../assets/images/matrix_www-dot-intobinary-dot-org.png");}.madam-matrix{background-position:top right;}.mockups-background.style-new,.madam-matrix{background-size:25em auto !important;}.ads-list-item:nth-child(1) .ad{background-image:url("../../assets/images/social-media-post-1.png");}.ads-list-item:nth-child(2) .ad{background-image:url("../../assets/images/social-media-post-2.png");}.ads-list-item:nth-child(3) .ad{background-image:url("../../assets/images/social-media-post-3.png");}.ad{background-position:center;}.ad{background-size:cover;}.ads-facebook-placeholder{background-image:url("../../assets/images/icon_facebook_white.png");}.ads-facebook-placeholder{background-repeat:no-repeat;background-position:center 75%;}.ads-facebook-placeholder{background-size:25%;}
 	/*** END MEDIA ***/
 		
 	/*** UTILITIES ***/
@@ -67,7 +67,29 @@ Written for -- www.madewithlove.intobinary.org
 	/*** END ANIMATIONS ***/
 		
 	/*** BETAs ***/
-		/*// CHECK JS.cards-list-item[data-position="1"]{top:0;left:0;}.cards-list-item[data-position="2"]{top:0;right:0;}.cards-list-item[data-position="3"]{bottom:0;left:0;}.cards-list-item[data-position="4"]{bottom:0;right:0;}.cards-list-item[data-position="1"] .card{bottom:0;right:0;}.cards-list-item[data-position="2"] .card{bottom:0;left:0;}.cards-list-item[data-position="3"] .card{top:0;right:0;}.cards-list-item[data-position="4"] .card{top:0;left:0;}*/
+		.nav-cta {
+			justify-content: flex-end;
+		}
+	
+		.brochure-content-figure-a {
+			position: relative;
+		}
+		.brochure-content-figure-extra {
+			position: absolute; top: 0; left: 0;
+			width: 100%; height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: #fff;
+			
+			visibility: hidden;
+		}
+		.brochure-content-figure-a:hover .brochure-content-figure-extra,
+		.brochure-content-figure-a:active .brochure-content-figure-extra,
+		.brochure-content-figure-a:focus .brochure-content-figure-extra {
+			visibility: visible;
+			background-color: rgba(0, 0, 0, .9);
+		}
 	/*** BETAs ***/
 		
 	/*** TO DELETE ***/
