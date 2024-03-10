@@ -1,0 +1,58 @@
+/*** CANCEL ***/
+html, body { width: 100%; height: 100%; }
+main { min-height: 100%; }
+
+a { text-decoration: underline; }
+/*** END CANCEL ***/
+
+/*** COLORS ***/
+.ad-link,
+.ad-title { color: #03EA60; }
+
+html, body { background-color: #eee; }
+/*** END COLORS ***/
+
+/*** FONTS ***/
+@font-face{font-family:"OCR A";src:url("../../assets/fonts/OCR-A-extended/ocraext.ttf");/*src:url("../../assets/fonts/ALPHABETH.eot") format("embedded-opentype"),url("../../assets/fonts/ALPHABETH.woff2") format("woff2"),url("../../assets/fonts/ALPHABETH.woff") format("woff"),url("../../assets/fonts/ALPHABETH.ttf") format("trutype"),url("../../assets/fonts/ALPHABETH.svg") format("svg");*/}
+	
+body{font-family:"OCR A", serif;}
+
+.ad-title { font-size: 3em; }
+.ad-link { font-size: 1.9em; }
+
+.ad-title,
+.ad-text-p,
+.footer { text-align: center; }
+/*** END FONTS ***/
+
+/*** COMPONENTS ***/
+	/*** COMMONS ***/
+	
+	/*** .ad ***/
+	.ad {
+		width: 100%; max-width: 75em; min-height: 100vh; height: 100%;
+		padding: 3em;
+		margin: 0 auto;
+	}
+	.ad-text {
+		padding: 3em 0;
+	}
+	.ad-text-p {
+		padding: .5em;
+	}
+	
+	/*** .footer ***/
+	.footer {
+		padding: 1em;
+	}
+/*** END COMPONENTS ***/
+
+/*** DECORATION ***/
+	/*** .d-cssCentered ***/
+	.d-cssCentered {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.d-cssCentered.ad { flex-direction: column; }
+/*** END DECORATION ***/
