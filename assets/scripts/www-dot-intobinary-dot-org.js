@@ -1,7 +1,7 @@
 ---
 ---
 /*** JQUERY ***/
-{% include assets/jquery.js %}
+{% include assets/library.js %}
 /*** END JQUERY ***/
 
 {% include assets/script.js %}
