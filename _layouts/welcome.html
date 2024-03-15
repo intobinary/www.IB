@@ -67,7 +67,7 @@ layout: default
 		</div></nav>
 		
 		<section class="aspects"><div class="d-midWrap">
-			<header class="aspects-header"><div class="aspects-header-wrap">{% for file in site.data.aspects %}<label for="rdb4aspect{{ forloop.index }}" class="aspects-header-link u-link">{% for data in file %}<span class="aspects-header-link-title d-font_bold">{{ data[0] | replace: " (", "</span><br />(" }}{% endfor %}</label>{% endfor %}</div></header>
+			<header class="aspects-header"><div class="aspects-header-wrap">{% for file in site.data.aspects %}<label for="rdb4aspect{{ forloop.index }}" class="aspects-header-link u-link">{% for data in file %}<span class="aspects-header-link-title d-font_bold">For {{ data[0] | replace: " (", "</span><br />(" }}{% endfor %}</label>{% endfor %}</div></header>
 			
 			<div class="aspects-content">
 				<div class="aspects-content-header">
