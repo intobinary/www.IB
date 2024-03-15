@@ -23,7 +23,7 @@ main { overflow-x: hidden; }
 	#rdb4aspect{{ i }}:checked ~ main .aspects-header-link:nth-child({{ i }}), {% for j in (1..3) %}
 		#rdb4subAspect{{ i }}{{ j }}:checked ~ main .aspects-content-details-list-item:nth-child({{ i }}) .aspects-content-details-nav-link:nth-child({{ j }}),{% endfor %}{% endfor %}
 	.jekyllPlaceholderClass { background-color: #03EA60 !important; }
-.u-subtitle { color: #03EA60; }
+.u-subtitle { color: #03EA60 !important; }
 
 .aspects-content-details,
 .aspects-content-details:before,

@@ -41,7 +41,7 @@ main { overflow-x: hidden; }
 		#rdb4subAspect42:checked ~ main .aspects-content-details-list-item:nth-child(4) .aspects-content-details-nav-link:nth-child(2),
 		#rdb4subAspect43:checked ~ main .aspects-content-details-list-item:nth-child(4) .aspects-content-details-nav-link:nth-child(3),
 	.jekyllPlaceholderClass { background-color: #03EA60 !important; }
-.u-subtitle { color: #03EA60; }
+.u-subtitle { color: #03EA60 !important; }
 
 .aspects-content-details,
 .aspects-content-details:before,
