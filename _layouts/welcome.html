@@ -1,9 +1,33 @@
 ---
 layout: default
 ---
+	{% for i in (1..4) %}
+	<input type="radio" id="rdb4aspect{{ i }}" name="rdbs4aspects"{% if forloop.index == 3 %}{% endif %} />{% for j in (1..3) %}
+		<input type="radio" id="rdb4subAspect{{ i }}{{ j }}" name="rdbs4subAspect{{ i }}"{% if forloop.first %} checked{% endif %} />{% endfor %}{% endfor %}
+		
 	<main>
 		<input type="checkbox" id="chkbx4coupon" name="chkbx4coupon" />
-
+		
+		<section class="coupon"><div class="u-container">
+			<div class="coupon-paper side-left">
+				NAO Research
+			</div>
+			<div class="coupon-code side-right">
+				Madam Ella is part of the 2023 'Robot in Residence' cohort, a robotics research program created and sponsored by the German Goethe Insitut.
+				<br />
+				<br />
+				Contact Madam Ella to get updates of the project's evolution this 2024, from robotics talks to journals and papers. Every quarter is an upgrade in the project research.
+				<br />
+				<br />
+				Contact:
+				<br />
+				(+27) 63 047 8534
+				<br />
+				madam.ella@intobinary.org
+			</div>
+		</div></section>
+		
+		<!--
 		<section class="coupon"><div class="u-container">
 			<div class="coupon-paper side-left">
 				The first class is free!
@@ -17,6 +41,7 @@ layout: default
 				(+27) 63 047 8534
 			</div>
 		</div></section>
+		-->
 
 		<nav class="nav"><div class="u-container">
 			<div class="u-container-half side-left">
@@ -40,10 +65,33 @@ layout: default
 				</div>
 			</div>
 		</div></nav>
+		
+		<section class="aspects"><div class="d-midWrap">
+			<header class="aspects-header"><div class="aspects-header-wrap">{% for file in site.data.aspects %}<label for="rdb4aspect{{ forloop.index }}" class="aspects-header-link u-link">{% for data in file %}<span class="aspects-header-link-title d-font_bold">{{ data[0] | replace: " (", "</span><br />(" }}{% endfor %}</label>{% endfor %}</div></header>
+			
+			<div class="aspects-content">
+				<div class="aspects-content-header">
+					<!--
+					<h5 class="u-subtitle">Welcome</h5>
+					<h2 class="u-title">Give these coding _ a try.</h2>
+					-->
+				</div>
+				
+				<div class="aspects-content-details"><ul class="aspects-content-details-list">{% for file in site.data.aspects %}
+					<li class="aspects-content-details-list-item">{% assign iAspects = forloop.index %}
+						<nav class="aspects-content-details-nav"><label for="rdb4subAspect{{ forloop.index }}1" class="aspects-content-details-nav-link u-link">Beginner Coder</label><label for="rdb4subAspect{{ forloop.index }}2" class="aspects-content-details-nav-link u-link">Expert Coder</label><label for="rdb4subAspect{{ forloop.index }}3" class="aspects-content-details-nav-link u-link">Non Coder</label></nav>
+						{% for data in file %}{% for content in data[1] %}
+						<div class="aspects-content-details-box nthChild-{{ iAspects }}{{ forloop.index }}">
+							Here is a sample project we do at Into Binary: <span class="d-font_bold">"{% for text in content %}{{ text[1] }}{% endfor %}"</span> Try it at home, or come to us and we'll help you grow!
+						</div>{% endfor %}{% endfor %}
+					</li>{% endfor %}
+				</ul></div>
+			</div>
+		</div></section>
 
 		<section class="section-part1">
 			<header class="header u-container"><div class="u-container-half">
-				<h5 class="header-subtitle u-subtitle">Welcome</h5>
+				<h5 class="header-subtitle u-subtitle">Made in Africa by Africans</h5>
 				
 				<p class="header-title">See here! See here! <br />Have a look at the products the mentees at <img src="assets/images/logo-words_green_www-dot-intobinary-dot-org.png" class="header-title-logo" alt="Into Binary" /> have built!</p>
 				
@@ -106,27 +154,21 @@ layout: default
 				<div class="programs-wrap">
 					<ul class="programs-list">
 						<li class="programs-list-item"><div class="program">
-							<span class="u-subtitle">Program 1</span>
-							<h5 class="program-name">Beginner Dev</h5>
-							<p class="program-description">This pack is for those who have never coded a day in their life. We will start by igniting the mindsets of programmers and the passion for tech, using tools and platforms made for non-coders</p>
-						</div></li>
-						
-						<li class="programs-list-item"><div class="program">
-							<span class="u-subtitle">Program 2</span>
-							<h5 class="program-name">Deep Programming</h5>
-							<p class="program-description">The first stage of this program is to learn how to build a simple website from scratch. Once we confirm that you have mastered that, you get to creating top-level apps with our assistance.</p>
-						</div></li>
-						
-						<li class="programs-list-item"><div class="program">
-							<span class="u-subtitle">Program 3</span>
+							<span class="u-subtitle">Benefit 1</span>
 							<h5 class="program-name">Tech Tutoring</h5>
-							<p class="program-description">This program is all about the child’s school syllabus. We discuss every paragraph or every practice question without skipping. It has been proven that students learn better by analysis, not memorization.</p>
+							<p class="program-description">It has been proven that students learn better by analysis, not memorization. With the focus of one-on-one mentorship, we get to dive into child’s school syllabus. We build our coding projects as we 'revise' their school's tech books. We discuss every paragraph or every practice question. And they get to see the practical implications of each theory "live" with our projects.</p>
 						</div></li>
 						
 						<li class="programs-list-item"><div class="program">
-							<span class="u-subtitle">Program 4</span>
+							<span class="u-subtitle">Benefit 2</span>
 							<h5 class="program-name">Portfolio Building</h5>
 							<p class="program-description">This is often wanted by college students prepping for the workforce. We teach them how to set up and structure their code the way companies do. And with every project, they gain the coding experience for CV.</p>
+						</div></li>
+						
+						<li class="programs-list-item"><div class="program">
+							<span class="u-subtitle">Benefit 3</span>
+							<h5 class="program-name">Robotics</h5>
+							<p class="program-description">Artificial Intelligence is the powerhouse of robotics. A machine without code is just a piece of junk! Let the programming experts teach your kids the coding needed to put life into hardware!</p>
 						</div></li>
 					</ul>
 				</div>
@@ -168,7 +210,7 @@ layout: default
 
 			<section class="ads u-container"><div class="ads-wrap u-container-half">
 				<div class="ads-links">
-					<a href="instagram.com/ib_madewithlove" class="ads-facebook" >
+					<a href="https://instagram.com/ib_madewithlove" class="ads-facebook" >
 						<img src="assets/images/placeholder-1x1.png" class="ads-facebook-placeholder" />
 						<h6 class="ads-facebook-title">Instagram</h6>
 					</a>
@@ -194,7 +236,7 @@ layout: default
 
 				<p class="brochure-header-details">The primary goal of Into Binary’s mentoring programs is to facilitate software engineering skills and mastery over mere coding.</p>
 				
-				<div class="brochure-header-cta u-cta"><a href="/assets/files/into-binary-brochure.pdf" class="u-cta-button" download>Download The Brochure</a></div>
+				<div class="brochure-header-cta u-cta"><a href="/assets/files/into-binary-brochure.pdf" class="u-cta-button" download>Download The Brochure</a><br /><span>** made in 2021, outdated.<br />we have elvolved since!</span></div>
 			</div></div>
 
 			<div class="brochure-content u-container">
@@ -241,6 +283,23 @@ layout: default
 							</div>
 							
 							<div class="brochure-content-form-fieldset-double">
+								<label class="u-form-label">World *</label>
+								<select class="u-form-input" name="world" required>{% for file in site.data.aspects %}
+									<option>{% for data in file %}{{ data[0] }}{% endfor %}</option>{% endfor %}
+								</select>
+							</div>
+							
+							<div class="brochure-content-form-fieldset-double">
+								<label class="u-form-label">Level *</label>
+								<select class="u-form-input" name="level" required>
+									<option>Beginner Coder</option>
+									<option>Expert Coder</option>
+									<option>Non Coder</option>
+								</select>
+							</div>
+							
+							<!--
+							<div class="brochure-content-form-fieldset-double">
 								<label class="u-form-label">Program *</label>
 								<select class="u-form-input" name="program" required>
 									<option>Beginner Dev</option>
@@ -261,6 +320,7 @@ layout: default
 									<option>40+</option>
 								</select>
 							</div>
+							-->
 							
 							<div class="brochure-content-form-fieldset-double">
 								<label class="u-form-label">Phone *</label>

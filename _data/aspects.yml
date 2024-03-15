@@ -1,0 +1,16 @@
+- "After-School (Fun for Kids)":
+  - "Beginner Coder": "Design a simple game using Scratch where the player collects coins and avoids obstacles."
+  - "Expert Coder": "Design a multiplayer game with networking capabilities using Javascript and HTML5 canvas element."
+  - "Non-Coder": "Create a simple robot movement program using 'word-blocks' in Spike Prime or Mindstorm."
+- "Entrepreneurship (SAAS Creation)":
+  - "Beginner Coder": "Develop a basic integration of 'sign-in with Facebook' in a website."
+  - "Expert Coder": "Build a functional Minimal Viable Product (SAAS MVP) using React.js or Vue.js."
+  - "Non-Coder": "Develop a prototype for a basic mobile app wireframe using a tool like Figma or Adobe XD."
+- "Industry (Everyday Jobs)":
+  - "Beginner Coder": "Develop a basic website using HTML and CSS."
+  - "Expert Coder": "Create a 'COJ Gauteng' taxi calculator using React Native, Flutter or Jekyll."
+  - "Non-Coder": "Get to know SquareSpace."
+- "Research (Data Discovery)":
+  - "Beginner Coder": "Create a Python script to analyze a small dataset and generate basic statistics."
+  - "Expert Coder": "Implement a simple machine learning model like linear regression with the scikit-learn library."
+  - "Non-Coder": "Analyze a small dataset using Excel or Google Sheets."
