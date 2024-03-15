@@ -329,6 +329,13 @@ body{font-family:"OCR A", serif;}{font-family:"Arial Black", sans-serif;}
 
 	.aspects-content-details { width: 80%; }
 	.aspects-content-header { width: 20%; }
+
+	/*
+	.aspects-header-link-subtitle,
+	*/
+	.aspects-header-link-title {
+		text-wrap: nowrap; word-wrap: nowrap;
+	}
 			
 			.programs {
 				padding: 3em 4em;
