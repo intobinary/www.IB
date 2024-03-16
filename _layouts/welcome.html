@@ -283,9 +283,9 @@ layout: default
 							</div>
 							
 							<div class="brochure-content-form-fieldset-double">
-								<label class="u-form-label">World *</label>
+								<label class="u-form-label">Aspect *</label>
 								<select class="u-form-input" name="world" required>{% for file in site.data.aspects %}
-									<option>{% for data in file %}{{ data[0] }}{% endfor %}</option>{% endfor %}
+									<option>For {% for data in file %}{{ data[0] }}{% endfor %}</option>{% endfor %}
 								</select>
 							</div>
 							
