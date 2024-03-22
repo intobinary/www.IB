@@ -4,4 +4,4 @@
 {% include assets/reset.css %}
 /*** END RESET ***/
 
-{% include assets/style.css %}
+{% include assets/style_welcome.css %}
