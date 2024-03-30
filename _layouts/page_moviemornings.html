@@ -15,8 +15,27 @@ layout: default
 		</hgroup>
 		
 		<div class="header-text d-cssCentered">
-			<p class="header-text-p">Schedule: Saturdays 8:00 to 8:30am.</p>
+			<p class="header-text-p">Saturdays 8:00 to 8:30am.</p>
 			<p class="header-text-p"><a href="https://us04web.zoom.us/j/72235631147?pwd=TPFtLXPhWcv8p6Ye4cHtOynjgtZspO.1" class="banner-text-link">ZOOM Meeting ID: 722 3563 1147. Passcode: 3wZZFF.</a></p>
+			
+			<div class="u-countdown js-countdown">
+				<div class="u-countdown-box">
+					<span class="u-countdown-box-digit js-countdown-days"></span>
+					<span class="u-countdown-box-text">Days</span>
+				</div>
+				<div class="u-countdown-box">
+					<span class="u-countdown-box-digit js-countdown-hours"></span>
+					<span class="u-countdown-box-text">Hours</span>
+				</div>
+				<div class="u-countdown-box">
+					<span class="u-countdown-box-digit js-countdown-minutes"></span>
+					<span class="u-countdown-box-text">Minutes</span>
+				</div>
+				<div class="u-countdown-box">
+					<span class="u-countdown-box-digit js-countdown-seconds"></span>
+					<span class="u-countdown-box-text">Seconds</span>
+				</div>
+			</div>
 			<!--
 			<p class="header-text-p">Welcome to our tech-savvy community where we merge the worlds of cinema and technology! At our meetups, we dive into fascinating tech topics through the lens of short films. Join us for engaging discussions, insightful debates, and networking opportunities, all wrapped up in a dynamic 30-minute Online gathering.</p>
 			
@@ -47,3 +66,37 @@ layout: default
 	
 	<footer class="footer d-midWrap"><div class="footer-dock">&copy; Copyrights 2024 <a href="https://intobinary.org">Into Binary</a>. All Rights Reserved.</div></footer>
 </main>
+
+<script>
+// Set the start and end times for the countdown
+var now = new Date();
+var end = new Date();
+if (now.getHours() > 23 || (now.getHours() == 23 && now.getMinutes() > 9)) {
+  end.setDate(now.getDate() + 7 - now.getDay());
+} else {
+  end.setDate(now.getDate() + 7 - now.getDay() + 1);
+}
+end.setHours(8, 30, 0, 0);
+
+// Update the countdown timer every second
+setInterval(function() {
+  // Calculate the difference between the end time and the current time
+  var diff = end - now;
+
+  // Calculate the number of days, hours, minutes, and seconds left
+  var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+  // Display the countdown timer on the page
+//  document.getElementById("countdown").innerHTML = "Days: " + (6 - days) + ", Hours: " + (23 - hours) + ", Minutes: " + (59 - minutes) + ", Seconds: " + (59 - seconds);
+  document.querySelector(".js-countdown-days").innerHTML = (6 - days);
+  document.querySelector(".js-countdown-hours").innerHTML = (23 - hours);
+  document.querySelector(".js-countdown-minutes").innerHTML = (59 - minutes);
+  document.querySelector(".js-countdown-seconds").innerHTML = (59 - seconds);
+
+  // Update the current time
+  now = new Date();
+}, 1000);
+</script>

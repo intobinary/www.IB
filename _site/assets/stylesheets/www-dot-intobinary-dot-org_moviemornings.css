@@ -124,7 +124,12 @@ html, body {
 	.adOLD-title,
 	.header-hgroup-title { font-size: 1.9em; }
 	.adOLD-link,
-	.header-text-p { font-size: 1.25em; }
+	.header-text-p,
+	.u-countdown-box-digit,
+	.u-countdown-box-text { font-size: 1.25em; }
+	
+	/*** UTILITIES: .u-countdown ***/
+	.u-countdown-box { width: 45%; }
 	
 	/*** COMPONENTS: COMMONS ***/
 	.footer-dock,
@@ -136,7 +141,12 @@ html, body {
 	.adOLD-title,
 	.header-hgroup-title { font-size: 3em; }
 	.adOLD-link,
-	.header-text-p { font-size: 1.9em; }
+	.header-text-p,
+	.u-countdown-box-digit,
+	.u-countdown-box-text { font-size: 1.9em; }
+	
+	/*** UTILITIES: .u-countdown ***/
+	.u-countdown-box { width: 20%; }
 	
 	/*** COMPONENTS: COMMONS ***/
 	.footer-dock,
@@ -153,6 +163,7 @@ html, body {
 	}
 	.d-cssCentered.adOLD,
 	.d-cssCentered.header-text { flex-direction: column; }
+	.d-cssCentered.header-text { align-items: flex-start; }
 	
 	/*** .d-midWrap ***/
 	.d-midWrap {
@@ -161,8 +172,25 @@ html, body {
 	}
 /*** END DECORATION ***/
 
+/*** BETA ***/
+	/*** .u-countdown ***/
+	.u-countdown {
+		width: 100%;
+//		text-align: center;
+	}
+	.u-countdown-box {
+		display: inline-block;
+	}
+	.u-countdown-box-digit,
+	.u-countdown-box-text {
+		display: block;
+	}
+/*** END BETA ***/
+
 /*** CSS-HACKS ***/
 .header-text { min-height: 70vh; }
+
+.u-countdown-box { margin-top: 1.9em; }
 /*** END CSS-HACKS ***/
 
 /*** TO-DELETE ***/
