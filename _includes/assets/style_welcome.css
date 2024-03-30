@@ -425,6 +425,14 @@ body{font-family:"OCR A", serif;}{font-family:"Arial Black", sans-serif;}
 			visibility: visible;
 			background-color: rgba(0, 0, 0, .9);
 		}
+		
+		.program-extra {
+			display: flex; align-items: flex-end;
+			margin-top: 1em;
+		}
+		.program-extra-video {
+			max-width: 50%;
+		}
 	/*** BETAs ***/
 		
 	/*** TO DELETE ***/
