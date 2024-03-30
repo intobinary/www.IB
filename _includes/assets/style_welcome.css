@@ -433,6 +433,7 @@ body{font-family:"OCR A", serif;}{font-family:"Arial Black", sans-serif;}
 		.program-extra-video {
 			max-width: 50%;
 		}
+		.program-extra a { text-decoration: underline; }
 	/*** BETAs ***/
 		
 	/*** TO DELETE ***/
