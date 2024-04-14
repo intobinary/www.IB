@@ -23,6 +23,7 @@ main { overflow-x: hidden; }
 .aspects-content-details-nav-link:hover,
 .aspects-header-link:hover,
 .coupon-paper,
+.program-extra-price,
 .u-cta-button{ background-color: #03EA60; }
 	#rdb4aspect1:checked ~ main .aspects-header-link:nth-child(1), 
 		#rdb4subAspect11:checked ~ main .aspects-content-details-list-item:nth-child(1) .aspects-content-details-nav-link:nth-child(1),
@@ -88,6 +89,7 @@ body{font-family:"OCR A", serif;}{font-family:"Arial Black", sans-serif;}
 .brochure-content-details-title,
 .program-name,
 .u-title { font-size: 2.5em; }
+.program-extra-price { font-size: 1.9em; }
 .aspects-header-link-title { font-size: 1.19em; }
 	
 .ads-facebook-title,
@@ -421,12 +423,18 @@ body{font-family:"OCR A", serif;}{font-family:"Arial Black", sans-serif;}
 	/*** END MEDIA QUERIES ***/
 		
 /*** DECORATION ***/
+	/*** .d-cssCentered ***/
+	.d-cssCentered {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	
 	/*** .d-midWrap ***/
 	.d-midWrap {
 		width: 100%; max-width: 70em;
 		display: block; margin: 0 auto;
-	}
-	
+	}	
 /*** END DECORATION ***/
 		
 	/*** ANIMATIONS ***/
@@ -459,13 +467,20 @@ body{font-family:"OCR A", serif;}{font-family:"Arial Black", sans-serif;}
 		}
 		
 		.program-extra {
+			position: relative;
 			display: flex; align-items: flex-end;
 			margin-top: 1em;
 		}
+		.program-extra-price {
+			position: absolute; right: -.55em; bottom: -.55em;
+			width: 3em; height: 3em;
+			border-radius: 50%;
+		}
 		.program-extra-video {
+			position: relative;
 			max-width: 50%;
 		}
-		.program-extra a { text-decoration: underline; }
+		.program-extra p a { text-decoration: underline; }
 	/*** BETAs ***/
 		
 	/*** TO DELETE ***/
