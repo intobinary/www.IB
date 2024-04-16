@@ -318,6 +318,10 @@ body{font-family:"OCR A", serif;}{font-family:"Arial Black", sans-serif;}
 			.programs {
 				padding: 2em;
 			}
+			.program-extra-video {
+				
+			max-width: 100%;
+			}
 			.programs-matrix {
 				top: 2.5%; right: 75%;
 				height: 95%;
@@ -360,6 +364,14 @@ body{font-family:"OCR A", serif;}{font-family:"Arial Black", sans-serif;}
 			
 			.programs {
 				padding: 3em 4em;
+			}
+			.program-extra {
+				
+			display: flex; align-items: flex-end;
+			}
+			.program-extra-video {
+				
+			max-width: 50%;
 			}
 			.programs-wrap {
 				width: 75%;
@@ -436,7 +448,6 @@ body{font-family:"OCR A", serif;}{font-family:"Arial Black", sans-serif;}
 		
 		.program-extra {
 			position: relative;
-			display: flex; align-items: flex-end;
 			margin-top: 1em;
 		}
 		.program-extra-price {
@@ -446,7 +457,6 @@ body{font-family:"OCR A", serif;}{font-family:"Arial Black", sans-serif;}
 		}
 		.program-extra-video {
 			position: relative;
-			max-width: 50%;
 		}
 		.program-extra p a { text-decoration: underline; }
 	/*** BETAs ***/
