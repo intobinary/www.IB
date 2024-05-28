@@ -308,29 +308,29 @@ layout: default
 						
 						<fieldset class="brochure-content-form-fieldset">
 							<div class="brochure-content-form-fieldset-single">
-								<label class="u-form-label">Full Name of Mentee</label>
+								<label class="u-form-label">Full Name of Mentee *</label>
 								<input type="text" class="u-form-input" name="student" required />
 							</div>
 							
 							<div class="brochure-content-form-fieldset-double">
 								<label class="u-form-label">Parent Name</label>
-								<input type="text" class="u-form-input" name="Parent" required />
+								<input type="text" class="u-form-input" name="Parent" />
 							</div>
 							
 							<div class="brochure-content-form-fieldset-double">
-								<label class="u-form-label">Whatsapp Contact</label>
+								<label class="u-form-label">Whatsapp Contact *</label>
 								<input type="email" class="u-form-input" name="email" required />
 							</div>
 							
 							<div class="brochure-content-form-fieldset-double">
-								<label class="u-form-label">Program Interest</label>
+								<label class="u-form-label">Program Interest *</label>
 								<select class="u-form-input" name="world" required>{% for file in site.data.aspects %}
 									<option>For {% for data in file %}{{ data[0] }}{% endfor %}</option>{% endfor %}
 								</select>
 							</div>
 							
 							<div class="brochure-content-form-fieldset-double">
-								<label class="u-form-label">Skill Level</label>
+								<label class="u-form-label">Skill Level *</label>
 								<select class="u-form-input" name="level" required>
 									<option>Beginner Coder</option>
 									<option>Expert Coder</option>
