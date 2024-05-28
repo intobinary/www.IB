@@ -25,6 +25,7 @@ main { overflow-x: hidden; }
 .coupon-paper,
 .program-extra-price,
 .u-cta-button{ background-color: #03EA60; }
+	.u-cta-button.u-form-submit { background-color: #03EA60 !important; }
 	#rdb4aspect1:checked ~ main .aspects-header-link:nth-child(1), 
 		#rdb4subAspect11:checked ~ main .aspects-content-details-list-item:nth-child(1) .aspects-content-details-nav-link:nth-child(1),
 		#rdb4subAspect12:checked ~ main .aspects-content-details-list-item:nth-child(1) .aspects-content-details-nav-link:nth-child(2),
@@ -308,6 +309,11 @@ body{font-family:"OCR A", serif;}{font-family:"Arial Black", sans-serif;}
 #rdb4aspect3:checked ~ main .aspects-content-details-list-item:nth-child(3), 
 #rdb4aspect4:checked ~ main .aspects-content-details-list-item:nth-child(4), 
 .jekyllPlaceholderClass { display: block !important; }
+#rdb4aspect1:checked ~ main .is-menu, 
+#rdb4aspect2:checked ~ main .is-menu, 
+#rdb4aspect3:checked ~ main .is-menu, 
+#rdb4aspect4:checked ~ main .is-menu, 
+.jekyllPlaceholderClass { display: none !important; }
 
 .aspects-content-details-box { display: none; }
 #rdb4subAspect11:checked ~ main .aspects-content-details-box.nthChild-11, 

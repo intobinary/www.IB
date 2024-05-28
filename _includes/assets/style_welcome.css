@@ -20,7 +20,8 @@ main { overflow-x: hidden; }
 .aspects-header-link:hover,
 .coupon-paper,
 .program-extra-price,
-.u-cta-button{ background-color: #03EA60; }{% for i in (1..4) %}
+.u-cta-button{ background-color: #03EA60; }
+	.u-cta-button.u-form-submit { background-color: #03EA60 !important; }{% for i in (1..4) %}
 	#rdb4aspect{{ i }}:checked ~ main .aspects-header-link:nth-child({{ i }}), {% for j in (1..3) %}
 		#rdb4subAspect{{ i }}{{ j }}:checked ~ main .aspects-content-details-list-item:nth-child({{ i }}) .aspects-content-details-nav-link:nth-child({{ j }}),{% endfor %}{% endfor %}
 	.jekyllPlaceholderClass { background-color: #03EA60 !important; }
@@ -286,7 +287,9 @@ body{font-family:"OCR A", serif;}{font-family:"Arial Black", sans-serif;}
 
 .aspects-content-details-list-item { display: none; }{% for i in (1..4) %}
 #rdb4aspect{{ i }}:checked ~ main .aspects-content-details-list-item:nth-child({{ i }}), {% endfor %}
-.jekyllPlaceholderClass { display: block !important; }
+.jekyllPlaceholderClass { display: block !important; }{% for i in (1..4) %}
+#rdb4aspect{{ i }}:checked ~ main .is-menu, {% endfor %}
+.jekyllPlaceholderClass { display: none !important; }
 
 .aspects-content-details-box { display: none; }{% for i in (1..4) %}{% for j in (1..3) %}
 #rdb4subAspect{{ i }}{{ j }}:checked ~ main .aspects-content-details-box.nthChild-{{ i }}{{ j }}, {% endfor%}{% endfor%}
