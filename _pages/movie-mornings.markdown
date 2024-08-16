@@ -1,6 +1,6 @@
 ---
 layout: page_moviemornings
 
-zoom-link: "https://us04web.zoom.us/j/73189466076?pwd=myETszfaJMnmsWNQhOBs5P9VAjyWba.1"
-zoom-text: "Meeting ID: 731 8946 6076. Passcode: DEEvu9."
+zoom-link: "https://us04web.zoom.us/j/75574346874?pwd=VFicU1btcdb5O3TRVRLA23d225WhLT.1"
+zoom-text: "Meeting ID: 755 7434 6874. Passcode: 6z4pB6."
 ---
