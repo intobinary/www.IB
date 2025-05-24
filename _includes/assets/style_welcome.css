@@ -463,6 +463,18 @@ body{font-family:"OCR A", serif;}{font-family:"Arial Black", sans-serif;}
 		}
 		.program-extra p a { text-decoration: underline; }
 	/*** BETAs ***/
+	
+/*** CSS-HACKS ***/
+.brochure-content input[type="checkbox"],
+.brochure-content input[type="radio"] {
+	width: 1.9em; height: 1.9em;
+	display: inline-block !important;
+}
+.permission * {
+	display: inline;
+	vertical-align: top;
+}
+/*** END CSS-HACKS ***/
 		
 	/*** TO DELETE ***/
 		.section-part1,.section-part3{width:100%;}.section-part1{position:relative;}.section-part3{position:relative;//overflow-y:hidden;}
