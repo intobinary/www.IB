@@ -1,0 +1,454 @@
+/*** CANCEL***/
+.u-button { text-align: left; }
+.stage-researchers-card nav a { //text-indent: -7777px; }
+/*** END CANCEL ***/
+
+/*** Z-INDEXES ***/
+.d-background { position: relative; z-index: 10; }
+.header,
+.reserve { position: relative; z-index: 20; }
+/*** END Z-INDEXES ***/
+
+/*** COLORS ***/
+.d-background:before { background-color: rgba(114, 174, 74, .9); }
+.stage h2 span,
+.stage-researchers-card,
+.d-bgGreen,
+#rdb4researcher1:checked ~ main .stage-researchers-nav label:nth-child(1),
+#rdb4researcher2:checked ~ main .stage-researchers-nav label:nth-child(2),
+#rdb4researcher3:checked ~ main .stage-researchers-nav label:nth-child(3),
+#rdb4researcher4:checked ~ main .stage-researchers-nav label:nth-child(4) { background-color: rgb(4, 234, 96); }
+				.u-button { background-color: rgb(4, 234, 96) !important; }
+.stage h2 label,
+.stage h2 legend,
+h4 span { color: rgb(4, 234, 96); }
+
+div.is-highlight span:not(.CSSspacer),
+.about-moodle figure,
+.d-bgWhite { background-color: white; }
+.d-bgGradient.vToBottom { background: linear-gradient(to bottom, white, #eee); }
+.d-bgGradient.vToTop { background: linear-gradient(to top, white, #eee); }
+
+html, body,
+.about-highlights figure.is-lego img,
+.about-moodle a,
+.stage-researchers-card nav label { background-color: #eee; }
+.u-button.vWhite { background-color: #eee !important; }
+
+.stage-researchers-card nav a,
+.stage-researchers-nav label { background-color: #AAA; }
+
+.d-background:before { background-color: rgba(4, 4, 4, .96); }
+/*** END COLORS ***/
+
+/*** FONTS ***/
+@font-face { font-family: "OCR A"; src: url("../../assets/fonts/OCRAEXT.ttf"); }
+
+* { font-family: "OCR A"; letter-spacing: -.1em; }
+
+{ font-family: "Impact"; word-spacing: .15em; }
+{ font-family: "Bauhaus"; line-height: 1.15em; word-spacing: initial !important; }
+
+h4 { font-size: 1.8em; }
+
+h2 label, h4 span,
+p a,
+.IBRIlogo h1 { font-weight: bold; }
+.stage-nav { text-align: center; }
+.u-button:hover,
+.u-button:active,
+.u-button:focus { text-decoration: underline; }
+/*** END FONTS ***/
+
+/*** MEDIA ***/
+.about-moodle figure { background-size: 88% auto; }
+.stage-researchers-card {
+				background-position: top right;
+				background-size: auto 100%;
+}
+
+.u-button:after { background-image: url('../../assets/images/icon_hand.png'); }
+.u-botton:after { //background-size: 44% !important; }
+
+/*.is-highlight img,
+.researchers img, */
+.stage-researchers-card figure img,
+.students aside figure { filter: grayscale(100%); }
+
+.d-background { background-image: url("/assets/images/background-1.png"); }
+/* .d-background { background-image: url("/assets/images/background-2.png"); background-position: center -4em; } */
+/*** END MEDIA ***/
+
+/*** UTILITIES ***/
+				.u-button {
+								position: relative;
+//								min-width: 50%;
+								padding: .4em .7em;
+				}
+				.u-button:after {
+								content: "";
+								position: absolute; bottom: -.1em; right: .1em;
+								width: 1.8em; height: 1.8em;
+								
+								display: flex; align-items: center; justify-content: center;
+//								background-color: green;
+				}
+								/*** CSS-HACKS ***/
+								.stage .u-button { min-width: 50%; }
+								.about-moodle .u-button { display: block; }
+								.footer .u-button { padding-right: 2.8em; }
+/*** END UTILITIES ***/
+
+/*** COMPONENTS ***/
+				/*** COMMONS ***/
+				.CSSmidWrap { padding: 1.5em; }
+				input,
+				.about-moodle a,
+				.stage-researchers-card nav label { padding: .4em .7em; }
+				div.is-highlight span,
+				.about-moodle,
+				.researchers figure figcaption,
+				.stage-researchers-card { padding: 1em; }
+								.about-moodle a { margin-bottom: 1em; }
+
+				div.is-highlight span { display: block; }
+
+				/*** .about ***/
+				.about > div,
+				.about-highlights,
+				.about-moodle { display: flex; }
+				.about > div { flex-direction: column; }
+
+				.about > div:first-child {// width: 124% !important;// background-color: green; }
+
+				.about hgroup p { padding: 1.5em 0; }
+				.about-moodle figure {
+								width: 100%;
+								margin-right: 1em;
+				}
+				.about-moodle img { width: 100%; height: auto; }
+
+				.about-highlights figure.is-lego { padding: 1.8em .1em; }
+				.about-highlights figure.is-lego img { width: 50%; }
+				.about-highlights a { display: block; }
+
+				/*** .clients ***/
+				.clients { text-align: center; }
+				.clients img {
+								width: auto; height: 4em;
+				}
+
+				/*** .community ***/
+				.community form fieldset { gap: 1em; }
+
+				.community form { padding-top: 1.8em; }
+				.community form input { margin: .4em 0; }
+				.community form span { display: block; }
+
+				/*** .footer ***/
+				.footer hgroup {
+//								position: relative;
+//								margin-bottom: 1.8em;
+								float: right;
+				}
+				.footer nav a { 
+								display: inline-block;
+								margin: .4em;
+				}
+				.footer p { padding-top: 1.8em; }
+
+					/*** .header ***/
+				.header_dock { display: flex; }
+				.header_dock { flex-wrap: wrap-reverse !important; }
+				.header_dock { justify-content: flex-end; }
+
+				.IBRIlogo img { width: auto; }
+				.IBRIlogo h1 { position: relative; right: .1em; top: -.1em; }
+
+				/*** .researchers ***/
+				.researchers,
+				.researchers figure { display: flex; }
+				.researchers figure { flex-direction: column; }
+				.researchers figure { flex: 1; }
+				.researchers { //gap: 1em; }
+
+				.researchers figure {
+								position: relative;
+								aspect-ratio: 3/4;
+				}
+				.researchers figure a {
+								position: absolute; right: .1em; bottom: -.1em;
+				}
+				.researchers figure img {
+								aspect-ratio: 8/4;
+								background-position: left center;
+				}
+
+				/*
+				.researchers figure { margin-left: 1em; }
+				.researchers figure:nth-child(1) { margin-left: 0; }
+				*/
+
+				/*** .stage ***/
+				.about-data,
+				.stage-researchers-card,
+				.stage-researchers-card figure,
+				.stage-researchers-nav { display: flex; }
+				.about-data,
+				.stage-researchers-card { flex-direction: column; }
+
+				.stage { position: relative; }
+				.stage hgroup h2 { margin-bottom: .4em; }
+				.stage h2 span {
+								width: .8em; height: .8em;
+								display: inline-block;
+				}
+								.stage h2 label,
+								.stage h2 legend { display: inline !important; }
+
+				.stage-nav {
+								width: 100%;
+				}
+
+				.stage-researchers-card {
+								position: relative;
+								aspect-ratio: 7/4;
+				}
+				.stage-researchers-card figure img {
+								width: auto; height: 1.8em;
+				}
+				.stage-researchers-card hgroup { width: 70%; }
+				.stage-researchers-card hgroup a { margin-top: 1em; }
+				.stage-researchers-card hgroup span { display: block;  }
+				.stage-researchers-card nav a {
+								position: absolute; top: .1em; right: .1em;
+								display: block;
+								width: 1.8em; height: 1.8em;
+				}
+				.stage-researchers-card nav label,
+				.stage-researchers-card nav .u-button {
+								position: absolute; top: 44%; right: 44%;
+				}
+
+				.stage-researchers-nav label {
+								width: 1em; height: 1em;
+								margin: .4em;
+				}
+
+				/*** .students ***/
+				.students header { display: flex; }
+
+				.students aside a {
+								width: 100%;
+				}
+				.students aside figure {
+								display: block;
+								width: 100%; min-height: 4em;
+				}
+								/*** CSS-HACKS ***/
+								.students aside figure {
+												background-size: 115% auto;
+												background-position: 70% 35%;
+												
+//												background-color: green;
+								}
+/*** END COMPONENTS ***/
+
+/*** INTERACTIVITY ***/
+.stage-researchers-card { display: none; }
+#rdb4researcher1:checked ~ main .stage-researchers-card:nth-child(1) { display: flex; }
+
+.u-button:after { opacity: .4; }
+.u-button:hover:after,
+.u-button:active:after,
+.u-button:focus:after { opacity: .7; }
+/*** END INTERACTIVITY ***/
+
+/*** MEDIA-QUERIES ***/
+@media all and (max-width: 40em) {
+				/*** FONTS ***/
+				html { font-size: 14px; }
+				.stage h2 { font-size: 3em; }
+				.header h1 { font-size: 1.4em; }
+				
+				/*** COMMONS ***/
+								/*** CSS-HACKS: COMMONS ***/
+								.students header div.is-highlight { padding-left: 1em; }
+								.students header div.is-highlight, .students header hgroup { width: 50%; }
+				
+				/*** COMPONENTS .about ***/
+				.about-moodle figure {// margin-bottom: 1em; }
+								/*** VIEWPORT: .about ***/
+								.about > div {// margin-bottom: 1.24em; }
+								.about-highlights { padding-top: 1em; gap: 1em; }
+				
+				/*** COMPONENTS: .clients ***/
+				.clients img { margin: .4em 1em; }
+				
+				/*** COMPONENTS: .community ***/
+								/*** VIEWPORT: .community ***/
+								.community form div { display: inline-block; }
+								.community form div { width: 50%; }
+								.community form div:nth-child(1) { padding-right: 1em; }
+								.community form div:nth-child(3) { width: 100%; margin-top: 1em; }
+				
+				/*** COMPONENTS: .footer ***/
+				/*
+				.footer hgroup { width: 34%; left: 64%; }
+				*/
+								/*** VIEWPORT: .footer ***/
+				
+				/*** COMPONENTS: .header ***/
+				.IBRIlogo img { height: 1.8em; }
+								/*** VIEWPORT: .header ***/
+				
+				/*** COMPONENTS: .researchers ***/
+								/*** VIEWPORT: .researchers ***/
+								.researchers figure { display: flex; flex-direction: column; }
+								.researchers { flex-wrap: wrap; gap: 1em; }
+								.researchers figure { flex: 0 48% }
+				
+				/*** COMPONENTS: .stage ***/
+								/*** VIEWPORT: .stage ***/
+								.stage_dock { align-items: center; justify-content: center; }
+				
+								.stage-nav { margin: 1em .1em; }
+								.stage-researchers { margin: 1.8em 0; }
+				
+				/*** COMPONENTS: .students ***/
+								/*** VIEWPORT: .students ***/
+								.students aside figure {
+												aspect-ratio: 8/4;
+												background-position: 70% 40%;
+								}
+								.students aside p { padding-top: 1.8em; } 
+}
+@media all and (min-width: 40em) {
+				/*** FONTS ***/
+				html { font-size: 18px; }
+				.stage h2 { font-size: 4em; }
+				.header h1 { font-size: 1.8em; }
+				
+				.students hgroup h4 {// text-align: right; }
+				
+				/*** COMMONS ***/
+								/*** CSS-HACKS: COMMONS ***/
+								.about header, .about-highlights,
+								.students header,
+								.students header div.is-highlight, .students header hgroup { width: 50%; }
+				
+				/*** COMPONENTS: .about ***/
+								/*** VIEWPORT: .about ***/
+								.about { display: flex; }
+				
+								.about-highlights div { margin-left: 1em; }
+				
+				/*** COMPONENTS: .clients ***/
+				.clients img { margin: .4em 1.8em; }
+				
+				/*** COMPONENTS: .community ***/
+								/*** VIEWPORT: .community ***/
+								.community form fieldset { display: flex; }
+				
+								.community .u-button { min-width: 25%; }
+				
+								.community hgroup { //width: 66.666%; }
+				
+								.commumity form div { //width: 18%; }
+								.community form div:nth-child(3) { min-width: 50%; }
+				
+				/*** COMPONENTS: .footer ***/
+				/*
+				.footer hgroup { width: 25%; left: 75%; }
+				*/
+								/*** VIEWPORT: .footer ***/
+				
+				/*** COMPONENTS: .header ***/
+				.IBRIlogo img { height: 2.5em; }
+								/*** VIEWPORT: .header ***/
+				
+				/*** COMPONENTS: .researchers ***/
+								/*** VIEWPORT: .researchers ***/
+								.researchers figure { margin-left: 1em; }
+								.researchers figure:nth-child(1) { margin-left: 0; }
+
+				/*** COMPONENTS: .stage ***/
+				.stage_dock { display: flex; }
+								/*** VIEWPORT: .stage ***/
+								.stage-researchers {// min-width: 40%; }
+								.stage-researchers-card { min-height: 12em; }
+								.stage_dock > .CSSspacer { //min-width: 18%; }
+				
+								.stage_dock > hgroup a { position: relative; left: 60%; }
+								.stage-nav { position: absolute; right: .1em; bottom: -1.8em; }
+				
+				/*** COMPONENTS: .students ***/
+								/*** VIEWPORT: .students ***/
+								.students,
+								.students aside { display: flex; }
+								.students aside { flex-direction: column; }
+								.students aside,
+								.students aside figure { flex: 1; }
+				
+								.students aside a { //width: 50%; }
+				
+								/*** CSS-HACKS: .students ***/
+								.students aside { margin-left: 1em; }
+	
+				/*** DECORATION: .d-background ***/
+				.d-background { height: 70vh; }
+}
+/*** END MEDIA-QUERIES ***/
+
+/*** DECORATION ***/
+	/*** .d-background ***/
+	.d-background {
+		position: absolute; top: 0; left: 0;
+		width: 100%;
+	}
+	.d-background:before {
+		content: ""; position: absolute; top: 0; left: 0;
+		width: 100%; height: 100%;
+	}
+
+.researchers .d-bgGradient,
+.students .d-bgGradient { border-bottom: .4em dashed white; }
+.d-bgWhite { display: block; }
+/*** END DECORATION ***/
+
+/*** TOOLS ***/
+	/*** .CSScentered ***/
+	.CSScentered {
+		display: flex;
+		align-items: center; justify-content: center;
+	}
+	
+	/*** .CSSmidwrap ***/
+	.CSSmidwrap {
+		max-width: 70em;
+		display: block;
+		margin: auto;
+	}
+	
+				.CSSbold { font-weight: bold; }
+				.CSSinline { display: inline !important; }
+				.CSSnoWrap { white-space: nowrap; }
+				.CSSspacer { flex: 1; }
+/*** END TOOLS ***/
+
+/*** SANDBOX ***/
+
+	/*** .reserve ***/
+	.reserve { display: flex !important; }
+	.reserve { align-items: flex-end; }
+	
+	.reserve { margin-top: 9em; }
+	.reserve div { width: 35%; }
+/*** END SANDBOX ***/
+
+/*** CSS-HACKS ***/
+.about-highlights figure.is-lego img,
+.stage h2 span,
+.stage-researchers-nav label {// transform: rotate(44deg); border-radius: 50%; }
+/*** END CSS-HACKS ***/
+
